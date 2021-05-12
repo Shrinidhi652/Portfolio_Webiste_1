@@ -1,0 +1,25 @@
+.heading {
+  font-size: 1em;
+  margin-left: auto;
+  font-style: inherit;
+  font-weight: bold;
+}
+.nav-button {
+  display: flex;
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+.nav-button a {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  margin-right: 15px;
+  color: #dcdcdc;
+}
+
+.nav-button a:hover {
+  transition: 1s;
+  color: black;
+  margin-bottom: 3px;
+  border-bottom: 3px solid black;
+}
