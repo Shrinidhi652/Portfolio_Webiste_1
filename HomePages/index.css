@@ -177,13 +177,19 @@ nav {
 }
 
 /* Text on Images */
-/*
-.subtitle-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+
+.subtitle a {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-size: 3em;
+  top: 50%;
+  margin-left: 13%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
 }
 
-.subtitle {
+/*.subtitle {
   text-decoration: none;
   color: red;
   font-size: 2em;
