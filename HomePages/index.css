@@ -173,6 +173,12 @@ nav {
   text-align: center;
   padding-right: 100px;
   padding-left: 100px;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.portfolio-img-background:hover ~ .img-text-wrapper {
+  opacity: 1;
 }
 
 .img-overlay {

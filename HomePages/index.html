@@ -37,49 +37,66 @@
       <div class="portfolio-items-wrapper">
        
         <div class="portfolio-item-wrapper">
-          <div
-            class="portfolio-img-background"
-            style="background-image: url(/images/programming.jpg)"
-          ></div>
+         
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(/images/programming.jpg)"
+            ></div>
 
-          <div class="img-text-wrapper">
-            <div class="img-logo-wrapper">
-              <img src="/images/Test.png" alt="OtherProjects" />
+            <div class="img-text-wrapper">
+              <div class="img-logo-wrapper">
+                <img src="/images/Test.png" alt="OtherProjects" />
+              </div>
             </div>
-          </div>
+          
         </div>
 
         <div class="portfolio-item-wrapper">
-          <div
-            class="portfolio-img-background"
-            style="background-image: url(/images/digitaldrawing.jpg)"
-          ></div>
+          
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(/images/digitaldrawing.jpg)"
+            ></div>
 
-          <div class="img-text-wrapper">
-            <div class="img-logo-wrapper">
-              <img src="/images/Test.png" alt="OtherProjects" />
+            <div class="img-text-wrapper">
+              <div class="img-logo-wrapper">
+                <img src="/images/Test.png" alt="OtherProjects" />
+              </div>
             </div>
-          </div>
+          
         </div>
 
         <div class="portfolio-item-wrapper">
-          <div
-            class="portfolio-img-background"
-            style="background-image: url(/images/programming.jpg)"
-          ></div>
+    
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(/images/programming.jpg)"
+            ></div>
 
-          <div class="img-text-wrapper">
-            <div class="img-logo-wrapper">
-              <img src="/images/Test.png" alt="OtherProjects" />
+            <div class="img-text-wrapper">
+              <div class="img-logo-wrapper">
+                <img src="/images/Test.png" alt="OtherProjects" />
+              </div>
             </div>
-          </div>
-        
+      
         </div>
         
     </div>
 
     <!-- Soruces -->
     <script src="nav.js"></script>
-    <script src="index.js"></script>
+    <script>
+    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper');
+
+      portfolioitems.forEach(portfolioitem => {
+          portfolioitem.addEventListener('mouseover', () => {
+              portfolioitem.childNodes[1].classList.add('img-overlay');
+          });
+      
+          portfolioitem.addEventListener('mouseout', () => {
+              portfolioitem.childNodes[1].classList.remove('img-overlay');
+          });
+      });
+      </script>
   </body>
 </html>
