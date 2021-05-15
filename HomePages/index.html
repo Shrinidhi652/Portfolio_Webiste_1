@@ -19,7 +19,7 @@
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="aboutpage.html">About</a>
         </li>
       </ul>
 
@@ -33,70 +33,70 @@
     <!-- Images Content -->
 
     <div class="content-wrapper">
-      
       <div class="portfolio-items-wrapper">
-       
         <div class="portfolio-item-wrapper">
-         
+          <a href="/PortfolioPages/other.html">
             <div
               class="portfolio-img-background"
-              style="background-image: url(/images/programming.jpg)"
+              style="background-image: url(/images/otherprojects.jpg)"
             ></div>
 
             <div class="img-text-wrapper">
               <div class="img-logo-wrapper">
-                <img src="/images/Test.png" alt="OtherProjects" />
+                <img src="/images/OtherProjects.png" alt="OtherProjects" />
               </div>
             </div>
-          
+          </a>
         </div>
 
         <div class="portfolio-item-wrapper">
-          
+          <a href="/PortfolioPages/figuredrawing.html">
             <div
               class="portfolio-img-background"
-              style="background-image: url(/images/digitaldrawing.jpg)"
+              style="background-image: url(/images/figuredrawing.jpg)"
             ></div>
 
             <div class="img-text-wrapper">
               <div class="img-logo-wrapper">
-                <img src="/images/Test.png" alt="OtherProjects" />
+                <img src="/images/AnatomyDrawing.png" alt="AnatomyDrawing" />
               </div>
             </div>
-          
+          </a>
         </div>
 
         <div class="portfolio-item-wrapper">
-    
+          <a href="/PortfolioPages/characterdesign.html">
             <div
               class="portfolio-img-background"
-              style="background-image: url(/images/programming.jpg)"
+              style="background-image: url(/images/characterdesign.jpg)"
             ></div>
 
             <div class="img-text-wrapper">
               <div class="img-logo-wrapper">
-                <img src="/images/Test.png" alt="OtherProjects" />
+                <img src="/images/CharacterDesign.png" alt="CharacterDesing" />
               </div>
             </div>
-      
+          </a>
         </div>
-        
+      </div>
     </div>
 
     <!-- Soruces -->
     <script src="nav.js"></script>
     <script>
-    const portfolioitems = document.querySelectorAll('.portfolio-item-wrapper');
+      const portfolioitems = document.querySelectorAll(
+        ".portfolio-item-wrapper a"
+      );
 
-      portfolioitems.forEach(portfolioitem => {
-          portfolioitem.addEventListener('mouseover', () => {
-              portfolioitem.childNodes[1].classList.add('img-overlay');
-          });
-      
-          portfolioitem.addEventListener('mouseout', () => {
-              portfolioitem.childNodes[1].classList.remove('img-overlay');
-          });
+      portfolioitems.forEach((portfolioitem) => {
+        portfolioitem.addEventListener("mouseover", () => {
+          portfolioitem.childNodes[1].classList.add("img-overlay");
+        });
+
+        portfolioitem.addEventListener("mouseout", () => {
+          portfolioitem.childNodes[1].classList.remove("img-overlay");
+        });
       });
-      </script>
+    </script>
   </body>
 </html>
