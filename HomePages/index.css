@@ -42,10 +42,20 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: wheat;
+  color: white;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 15px;
+}
+
+.about {
+  color: grey;
+  border-bottom: 3px solid transparent;
+}
+
+.about:hover {
+  color: white;
+  border-bottom: 3px solid white;
 }
 
 .burger {
